@@ -1,6 +1,6 @@
 header{
     background-color: white;
-    background-image: url(images/logo.jpg);
+    background-image: url("../images/logo.jpg");
     background-repeat: no-repeat;
     background-position: 20% left;
     height: 70px;
