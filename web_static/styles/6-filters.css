@@ -23,7 +23,7 @@
 .filters button:hover{
     opacity: 90%;
 }
-.locations, .amenities{
+.locations, section.filters .amenities{
     height: 100%;
     width: 25%;
     display: flex;
@@ -34,14 +34,34 @@
 .locations{
     border-right: 1px solid #DDDDDD;
 }
-.locations h3, .amenities h3 {
+.locations h3, section.filters .amenities h3 {
     font-weight: 600;
     color: black;
     margin: 0 0 2px 20px;
 }
-.locations h4, .amenities h4 {
+.locations h4, section.filters .amenities h4 {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: black;
     margin: 2px 0 0 20px;
+}
+ul.popover{
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 100%;
+    color: black;
+    box-sizing: border-box;
+    top: 0;
+    position: absolute;
+    display: none;
+    margin-top: 70px;
+    list-style-type: none;
+    z-index: 1;
+}
+.popover ul li{
+    list-style-type: none;
+}
+.filters .locations:hover  .popover, .filters .amenities:hover .popover{
+    display: block;
 }
